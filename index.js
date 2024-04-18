@@ -24,6 +24,8 @@ app.use(
     origin: ["http://localhost:4200"],
   })
 );
+//pathan
+//fqSpjPsqYvgMeuEk
 // pathannehan28
 // 7xzcjDDQU8smHy6O
 // mongodb+srv://pathannehan28:NJejTg53WMc1ULvv@cluster0.gkvm8bh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
@@ -33,9 +35,7 @@ app.use(express.json());
 app.use("/api", routes);
 
 mongoose
-  .connect("mongodb+srv://pathannehan28:NJejTg53WMc1ULvv@cluster0.gkvm8bh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
-    useNewUrlParser: true,
-  })
+  .connect("mongodb+srv://pathannehan28:NJejTg53WMc1ULvv@cluster0.gkvm8bh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to the database");
     app.listen(5000, () => {
