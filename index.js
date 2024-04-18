@@ -18,7 +18,12 @@ app.use(
   })
 );
 
-
+app.use(
+  cors({
+    credentials: true,
+    origin: ["http://localhost:4200"],
+  })
+);
 //pathan
 //fqSpjPsqYvgMeuEk
 // pathannehan28
